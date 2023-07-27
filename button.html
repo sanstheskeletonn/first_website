@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button</title>
+    <style>
+      button {
+        background-color: white;
+        border: 2px solid rgb(219, 84, 75);
+        color: black;
+        font-size: 20px;
+        border-radius: 8px;
+        padding: 5px 8px;
+      }
+      button:after {
+        content: "default";
+      }
+      button:hover::after {
+        content: "this is fake website dont click because this is just for project on my test coding";
+      }
+
+      button:hover {
+        background-color: rgb(219, 84, 75);
+        color: white;
+        transform: scale(1, 2);
+      }
+      button:active {
+        background-color: blue;
+        border: 5px rebeccapurple solid;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Default</button>
+  </body>
+</html>
